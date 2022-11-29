@@ -286,9 +286,15 @@ system_node_install() {
   sleep 2
   npm install -g npm@latest
   sleep 2
-  sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
-  wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-  sudo apt-get update -y && sudo apt-get -y install postgresql
+  sudo apt install wget ca-certificates
+  sudo apt install postgresql postgresql-contrib -y
+  sudo systemctl start postgresql.service
+  sleep 2
+  sudo su - postgres
+  psql
+  CREATE EXTENSION "uuid-ossp";
+  \q
+  exit
   sleep 2
   sudo timedatectl set-timezone America/Sao_Paulo
   
