@@ -245,6 +245,7 @@ server {
     proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
     proxy_cache_bypass \$http_upgrade;
   }
+underscores_in_headers on;
 }
 END
 ln -s /etc/nginx/sites-available/${instancia_add}-backend /etc/nginx/sites-enabled
