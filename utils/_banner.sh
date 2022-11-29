@@ -23,13 +23,8 @@ print_banner() {
   printf "\n\n"
 
   printf "${BLUE}";
-  printf "                 ████████   ██    ██   ████████   ████████   ████████   ████████   \n";
-  printf "                 ██          ██  ██    ██              ███   ██    ██   ██    ██   \n";
-  printf "                 ████████     ████     ████████      ███     ████████   ████████   \n";
-  printf "                       ██      ██            ██   ███        ██    ██   ██          \n";
-  printf "                 ████████      ██      ████████   ████████   ██    ██   ██           \n";
-  printf "                               SYSZAP - SISTEMA DE MULTIATENDIMENTO                    \n";
-  printf "                                        www.syszap.com.br                             \n";
+  printf "                               OWEN TALK - SISTEMA DE MULTIATENDIMENTO                 \n";
+  printf "                                 www.owenbrasil.com | 11 91289-1716                            \n";
   printf "\n"
  
   printf "${NC}";
