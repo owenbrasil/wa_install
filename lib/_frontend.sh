@@ -89,8 +89,9 @@ frontend_set_env() {
 
 sudo su - deploy << EOF
   cat <<[-]EOF > /home/deploy/${instancia_add}/frontend/.env
-REACT_APP_BACKEND_URL=${backend_url}
+REACT_APP_BACKEND_URL=${backend_url}/
 REACT_APP_HOURS_CLOSE_TICKETS_AUTO = 24
+REACT_APP_ENV_TOKEN=210897ugn1204u98u8jfo2983u5
 [-]EOF
 EOF
 
