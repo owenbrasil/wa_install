@@ -6,6 +6,6 @@ sudo apt install -y git && git clone https://github.com/owenbrasil/wa_install.gi
 
 ACESSANDO DIRETORIO DO INSTALADOR & INICIANDO INSTALAÇÕES ADICIONAIS (USAR ESTE COMANDO PARA SEGUNDA OU MAIS INSTALAÇÃO:
 ```bash
-cd ~ && rm -rf ./wa-install && git clone https://github.com/owenbrasil/wa_install.git && sudo chmod -R 777 ./wa_install && cd ./wa_install && sudo ./install_instancia
+cd && rm -rf wa-install && git clone https://github.com/owenbrasil/wa_install.git && sudo chmod -R 777 ./wa_install && cd ./wa_install && sudo ./install_instancia
 ```
 
